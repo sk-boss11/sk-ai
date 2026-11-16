@@ -1,1 +1,6 @@
+Flask
+groq
 python-dotenv
+gunicorn
+flask-cors
+requests
