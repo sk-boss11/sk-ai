@@ -23,7 +23,7 @@ def chat():
     history.append({"role": "user", "content": msg})
     history = history[-10:]
     try:
-        res = client.chat.completions.create(model="llama-3.3-70b-versatile", messages=history)
+        res = client.chat.completions.create(model="llama-3.1-8b-instant", messages=history) 
         reply = res.choices[0].message.content
     except Exception as e:
         reply = f"Error: {e}"
